@@ -1,0 +1,367 @@
+/*Global*/
+body {
+    width: 100vw;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #D6D8FF !important;
+}
+
+/*Typography*/
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: #3138B1;
+    margin-bottom: 24px;
+}
+h2 {
+    font-size: 24px;
+    color: #3138B1;
+    font-weight: 600;
+}
+h3 {
+    font-size: 14px;
+    color: #0C1E34;
+}
+p {
+    line-height: 24px;
+    font-size: 16px;
+    color: #0C1E34;
+}
+
+/*Top Navigation*/
+#navBar {
+    display: flex;
+    flex-direction: row;
+    margin: 64px 12vw 0;
+}
+#logo {
+    display: flex;
+    flex-grow: 1;
+    align-items: baseline;
+    justify-content: flex-start;
+    width: 25%;
+}
+#navigation {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 75%;
+}
+
+#navigation a{
+    text-decoration: none;
+    color: #3138B1;
+    margin-left: 26px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+#navigation a:hover {
+    color: #45DCEA;
+}
+
+.active {
+    color: #FF0BC2;
+    font-weight: 600;
+    position: relative;
+}
+.active::after {
+    content: '';
+    height: 4px;
+    text-align: center;
+    width: 100%;
+    border-radius: 4px;
+    display: block;
+    background: #FF0BC2;
+    position: absolute;
+    margin-top: 14px;
+}
+/*.icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 5%;
+}*/
+
+/*Main Content*/
+#heroSection {
+    margin: 4vh 12vw 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+#hi {
+    width: 344px;
+    margin-top: 20vh;
+}
+#hiBlurb {
+    margin-top: 36px;
+}
+#resumeButtons {
+    width: 336px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 48px;
+}
+button {
+    background-color: white;
+    border: 1px solid #FF0BC2;
+    width: 153px;
+    height: 44px;
+    border-radius: 32px;
+    box-shadow: 4px 4px #FF0BC2;
+    color: #FF0BC2;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+button:hover {
+    border: 1px solid #45DCEA;
+    box-shadow: 4px 4px #45DCEA;
+    color: #45DCEA;
+}
+#heroSketch {
+    display: flex;
+    width: 30vw;
+    height: 30vw;
+    background-image: url("../images/home.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    margin-top: 10vh;
+}
+#projects {
+    display: flex;
+    flex-direction: column;
+    width: 24vw;
+}
+#project1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+#project1Image {
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    background-image: url("../images/home_ClimbZen.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#project2Arrows {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+#project2 {
+    display: flex;
+    flex-direction: column;
+    height: 43vh;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#project2Image {
+    height: 328px;
+    width: 328px;
+    border-radius: 50%;
+    background-image: url("../images/home_USDA.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition-duration: 0.4s;
+}
+#project3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+#project3Image {
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    background-image: url("../images/home_Gulli.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.arrow {
+    height: 36px;
+    color: #FF0BC2;
+    font-size: 36px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+.arrow:hover {
+    color: #45DCEA;
+}
+
+/*Footer*/
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 12vw 4vh;
+}
+
+/*Smaller desktop*/
+@media only screen and (max-width: 1565px) {
+    #hi {
+        margin-top: 22vh;
+    }
+    #heroSketch {
+        width: 40vw;
+        height: 40vw;
+        margin-right: 0;
+        margin-top: 4vh;
+        justify-content: flex-end;
+    }
+    #projects {
+        margin-top: 8vh;
+        width: 76vw;
+        height: 328px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #project2 {
+        flex-direction: row;
+        width: 40vw;
+    }
+    #prev {
+        transform: rotate(-90deg);
+    }
+    #next {
+        transform: rotate(-90deg);
+    }
+    footer {
+        margin: 6vh 12vw 4vh;
+    }
+}
+
+/*Tablet*/
+@media only screen and (max-width: 1170px) {
+    #hi {
+        margin-top: 10vh;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    #navBar {
+            margin: 64px 8vw 0;
+    }
+    #heroSection {
+            margin: 4vh 8vw 0;
+    }
+    #projects {
+            width: 84vw;
+    }
+    footer {
+        margin: 6vh 8vw 4vh;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    #navBar {
+        margin: 64px 6vw 0;
+    }
+    #heroSection {
+        margin: 4vh 6vw 0;
+        justify-content: space-between;
+    }
+    #hi {
+        margin-top: 4vh;
+    }
+    #projects {
+        width: 88vw;
+        height: 220px;
+    }
+    #project1Image {
+        height: 100px;
+        width: 100px;
+    }
+    #project2Image {
+        height: 220px;
+        width: 220px;
+    }
+    #project3Image {
+        height: 100px;
+        width: 100px;
+    }
+    footer {
+        margin: 6vh 6vw 4vh;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    #heroSection {
+        flex-direction: column;
+    }
+    .heroSectionArea :nth-child(2) { order: -1; }
+    #heroSketch {
+        margin: 0 auto;
+        height: 70vw;
+        width: 70vw;
+    }
+    #hi {
+        margin: 0 auto;
+        margin-top: 8vh;
+    }
+    #projects {
+        align-items: center;
+    }
+}
+
+/*Mobile*/
+@media only screen and (max-width: 600px) {
+    body {
+        width: 100%;
+    }
+    #navBar {
+        margin: 0;
+        top: 0; 
+        z-index: 100;
+        width: 100%;
+        overflow: hidden;
+        position: fixed;
+        justify-content: space-between;
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+    #logo {
+        width: auto;
+        padding: 8px 0 8px 5vw;
+    }
+    #navigation {
+        width: auto;
+        padding: 8px 5vw 8px 0;
+    }
+    #navigation a {
+        display: flex;
+        margin-left: 4vw;
+        justify-content: right;
+    }
+    .active::after {
+        margin-top: 10px;
+    }
+
+    #heroSection {
+        margin-top: 16vh;
+    }
+    footer {
+        margin: 6vh 5vw 4vh;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    #navigation a{
+        margin-left: 3vw;
+    }
+}
