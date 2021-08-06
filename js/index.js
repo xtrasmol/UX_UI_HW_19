@@ -19,14 +19,23 @@ $('#prev').click(function() {
   topProject = cPHolder;
   bottomProject = tPHolder;
 
-  $('#project1Image').hover(function() {
+  $('#project1Image').mouseenter(function() {
     $(this).css('background-image', 'url(' + currentProjectHover + ')');
   });
-  $('#project2Image').hover(function() {
+  $('#project1Image').mouseleave(function() {
+    $(this).css('background-image', 'url(' + currentProject + ')');
+  });
+  $('#project2Image').mouseenter(function() {
     $(this).css('background-image', 'url(' + bottomProjectHover + ')');
   });
-  $('#project3Image').hover(function() {
+  $('#project2Image').mouseleave(function() {
+    $(this).css('background-image', 'url(' + bottomProject + ')');
+  });
+  $('#project3Image').mouseenter(function() {
     $(this).css('background-image', 'url(' + topProjectHover + ')');
+  });
+  $('#project3Image').mouseleave(function() {
+    $(this).css('background-image', 'url(' + topProject + ')');
   });
   
   var cPHover = currentProjectHover;
@@ -50,4 +59,31 @@ $('#next').click(function() {
   currentProject = tPHolder;
   topProject = bPHolder;
   bottomProject = cPHolder;
+
+  $('#project1Image').mouseenter(function() {
+    $(this).css('background-image', 'url(' + bottomProjectHover + ')');
+  });
+  $('#project1Image').mouseleave(function() {
+    $(this).css('background-image', 'url(' + bottomProject + ')');
+  });
+  $('#project2Image').mouseenter(function() {
+    $(this).css('background-image', 'url(' + topProjectHover + ')');
+  });
+  $('#project2Image').mouseleave(function() {
+    $(this).css('background-image', 'url(' + topProject + ')');
+  });
+  $('#project3Image').mouseenter(function() {
+    $(this).css('background-image', 'url(' + currentProjectHover + ')');
+  });
+  $('#project3Image').mouseleave(function() {
+    $(this).css('background-image', 'url(' + currentProject + ')');
+  });
+
+  var cPHover = currentProjectHover;
+  var tPHover = topProjectHover;
+  var bPHover = bottomProjectHover;
+  
+  currentProjectHover = tPHover;
+  topProjectHover = bPHover;
+  bottomProjectHover = cPHover;
 });
