@@ -92,6 +92,14 @@ p {
     width: 344px;
     margin-top: 20vh;
 }
+#hiBubble {
+    width: 344px;
+    height: 105px;
+    background-image: url("../images/home_bubble.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 #hiBlurb {
     margin-top: 36px;
 }
@@ -365,10 +373,33 @@ footer {
     }
 
     #heroSection {
-        margin-top: 16vh;
+        margin: 16vh 5vw 0;
+    }
+    #projects {
+        justify-content: center;
+    }
+    #project1 {
+        display: none;
+    }
+    #project3 {
+        display: none;
     }
     footer {
         margin: 6vh 5vw 4vh;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #hi {
+        width: 324px;
+    }
+    #hiBubble {
+        width: 324px;
+        height: 99px;
+        margin: 0 auto;
+    }
+    #resumeButtons {
+        width: 320px;
     }
 }
 

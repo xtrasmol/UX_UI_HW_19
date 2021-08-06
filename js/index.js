@@ -6,6 +6,25 @@ var currentProjectHover = 'images/home_USDA_hover.png';
 var topProjectHover = 'images/home_ClimbZen_hover.png';
 var bottomProjectHover = 'images/home_Gulli_hover.png';
 
+$('#project1Image').mouseenter(function() {
+  $(this).css('background-image', 'url(' + topProjectHover + ')');
+});
+$('#project1Image').mouseleave(function() {
+  $(this).css('background-image', 'url(' + topProject + ')');
+});
+$('#project2Image').mouseenter(function() {
+  $(this).css('background-image', 'url(' + currentProjectHover + ')');
+});
+$('#project2Image').mouseleave(function() {
+  $(this).css('background-image', 'url(' + currentProject + ')');
+});
+$('#project3Image').mouseenter(function() {
+  $(this).css('background-image', 'url(' + bottomProjectHover + ')');
+});
+$('#project3Image').mouseleave(function() {
+  $(this).css('background-image', 'url(' + bottomProject + ')');
+});
+
 $('#prev').click(function() { 
   $('#project1Image').css('background-image', 'url(' + currentProject + ')');
   $('#project2Image').css('background-image', 'url(' + bottomProject + ')');
@@ -19,25 +38,6 @@ $('#prev').click(function() {
   topProject = cPHolder;
   bottomProject = tPHolder;
 
-  $('#project1Image').mouseenter(function() {
-    $(this).css('background-image', 'url(' + currentProjectHover + ')');
-  });
-  $('#project1Image').mouseleave(function() {
-    $(this).css('background-image', 'url(' + currentProject + ')');
-  });
-  $('#project2Image').mouseenter(function() {
-    $(this).css('background-image', 'url(' + bottomProjectHover + ')');
-  });
-  $('#project2Image').mouseleave(function() {
-    $(this).css('background-image', 'url(' + bottomProject + ')');
-  });
-  $('#project3Image').mouseenter(function() {
-    $(this).css('background-image', 'url(' + topProjectHover + ')');
-  });
-  $('#project3Image').mouseleave(function() {
-    $(this).css('background-image', 'url(' + topProject + ')');
-  });
-  
   var cPHover = currentProjectHover;
   var tPHover = topProjectHover;
   var bPHover = bottomProjectHover;
@@ -59,25 +59,6 @@ $('#next').click(function() {
   currentProject = tPHolder;
   topProject = bPHolder;
   bottomProject = cPHolder;
-
-  $('#project1Image').mouseenter(function() {
-    $(this).css('background-image', 'url(' + bottomProjectHover + ')');
-  });
-  $('#project1Image').mouseleave(function() {
-    $(this).css('background-image', 'url(' + bottomProject + ')');
-  });
-  $('#project2Image').mouseenter(function() {
-    $(this).css('background-image', 'url(' + topProjectHover + ')');
-  });
-  $('#project2Image').mouseleave(function() {
-    $(this).css('background-image', 'url(' + topProject + ')');
-  });
-  $('#project3Image').mouseenter(function() {
-    $(this).css('background-image', 'url(' + currentProjectHover + ')');
-  });
-  $('#project3Image').mouseleave(function() {
-    $(this).css('background-image', 'url(' + currentProject + ')');
-  });
 
   var cPHover = currentProjectHover;
   var tPHover = topProjectHover;
