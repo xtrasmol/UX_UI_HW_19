@@ -57,8 +57,14 @@ p {
 }
 #navigation a:hover {
     color: #45DCEA;
+    font-weight: 600;
 }
-
+.navIcon {
+    font-size: 16px;
+}
+.navIcon:hover {
+    font-size: 18px;
+}
 .active {
     color: #FF0BC2;
     font-weight: 600;
@@ -163,14 +169,14 @@ button:hover {
     background-repeat: no-repeat;
     background-size: cover;
     transition-duration: 0.4s;
-    /* border: 1px solid #FF0BC2; */
-    /* box-shadow: 4px 4px #FF0BC2; */
+    border: 1px solid #FF0BC2;
+    box-shadow: 4px 4px #FF0BC2;
     opacity: 0.3;
 }
 #project1Image:hover {
     background-image: url("../images/home_ClimbZen_hover.png");
-    /* border: 1px solid #45DCEA; */
-    /* box-shadow: 4px 4px #45DCEA; */
+    border: 1px solid #45DCEA;
+    box-shadow: 4px 4px #45DCEA;
 }
 #project2Arrows {
     display: flex;
@@ -194,13 +200,13 @@ button:hover {
     background-repeat: no-repeat;
     background-size: cover;
     transition-duration: 0.4s;
-    /* border: 1px solid #FF0BC2; */
-    /* box-shadow: 4px 4px #FF0BC2; */
+    border: 1px solid #FF0BC2;
+    box-shadow: 4px 4px #FF0BC2;
 }
 #project2Image:hover {
     background-image: url("../images/home_USDA_hover.png");
-    /* border: 1px solid #45DCEA; */
-    /* box-shadow: 4px 4px #45DCEA; */
+    border: 1px solid #45DCEA;
+    box-shadow: 4px 4px #45DCEA;
 }
 #project3 {
     display: flex;
@@ -217,14 +223,14 @@ button:hover {
     background-repeat: no-repeat;
     background-size: cover;
     transition-duration: 0.4s;
-    /* border: 1px solid #FF0BC2; */
-    /* box-shadow: 4px 4px #FF0BC2; */
+    border: 1px solid #FF0BC2;
+    box-shadow: 4px 4px #FF0BC2;
     opacity: 0.3;
 }
 #project3Image:hover {
     background-image: url("../images/home_Gulli_hover.png");
-    /* border: 1px solid #45DCEA; */
-    /* box-shadow: 4px 4px #45DCEA; */
+    border: 1px solid #45DCEA;
+    box-shadow: 4px 4px #45DCEA;
 }
 .arrow {
     height: 36px;
